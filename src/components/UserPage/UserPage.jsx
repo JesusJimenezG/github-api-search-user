@@ -18,7 +18,7 @@ const UserPage = (props) => {
 
     useEffect(() => {
         dispatch(GetUser(props.match.params.id))
-    }, [])
+    }, [dispatch, props.match.params.id])
 
     const user = () => {
         if (!_.isEmpty(userState.data)) {

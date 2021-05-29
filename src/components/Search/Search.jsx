@@ -16,7 +16,6 @@ const Search = () => {
         var search = document.getElementById("search-input")
         var submit = document.getElementById("search-submit")
         var nav = document.getElementById("nav-search")
-        console.log(searchState.submitted)
         if (queryState?.length > 0) {
             if (widthState > 1264) {
                 logo.style.transition = "transform 0.6s ease"
@@ -64,7 +63,7 @@ const Search = () => {
             search.style.width = "60vw"
             search.style.height = "10vh"
         }
-    }, [queryState, widthState])
+    }, [queryState, widthState, searchState.submitted])
 
     window.onresize = () => {
         setWidthState(window.innerWidth)

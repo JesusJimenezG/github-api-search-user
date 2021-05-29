@@ -11,13 +11,6 @@ const SubmitButton = (props) => {
     if (props.queryState?.length > 0) {
         const fetchUsers = () => {
             dispatch(GetUsersList(props.queryState))
-            /* props.setFetchingState(true)
-            const response = await axios.get(url + "?q=jesus")
-
-            if (response.status === 200) {
-                props.setSubmitState(response.data)
-                props.setFetchingState(false)
-            } */
         }
 
         return (

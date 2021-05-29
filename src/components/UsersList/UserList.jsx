@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { useSelector } from "react-redux"
 import "./style.css"
 import _ from "lodash"
@@ -13,22 +13,10 @@ const spinnerCss = `
 `
 
 const UserList = () => {
-    /* const [usersState, setUsersState] = useState()
-    const [loadingState, setLoadingState] = useState(() => false) */
     const userList = useSelector((state) => state.UserList)
-
-    /* useEffect(() => {
-        console.log(usersState)
-        console.log(loadingState)
-    }, [usersState, loadingState]) */
-
-    /* useEffect(() => {
-        console.log(userList.data)
-    }, [userList]) */
 
     const users = () => {
         if (!_.isEmpty(userList.data)) {
-            console.log(userList.data)
             return <List data={userList.data} />
         }
         if (userList.loading) {

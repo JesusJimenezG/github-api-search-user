@@ -32,7 +32,7 @@ const User = ({ user }) => {
 
     useEffect(() => {
         dispatch(GetRepos(user.repos_url, user.public_repos))
-    }, [])
+    }, [dispatch, user.repos_url, user.public_repos])
 
     const repos = () => {
         if (!_.isEmpty(reposState.data)) {

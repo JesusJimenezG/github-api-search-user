@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import "./Home.css"
 import Search from "../Search/Search"
 import UserList from "../UsersList/UserList"
@@ -15,12 +15,6 @@ const Home = () => {
                 <Search />
             </div>
             <UserList />
-            {/* <MoonLoader
-                css={spinnerCss}
-                loading={fetchingState}
-                size={50}
-                color={"#4525ff"}
-            /> */}
         </div>
     )
 }
