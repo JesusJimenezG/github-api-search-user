@@ -1,0 +1,33 @@
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.search-container {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 40vh;
+    left: 15vw;
+}
+
+input[type="text"]:focus-visible {
+    outline-style: none;
+}
+
+#users-list {
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 80vw;
+    position: relative;
+    margin: 0 auto;
+    top: 20vh;
+}
+
+/* .spinner {
+    margin: 0 auto;
+    top: 20vh;
+    display: flex;
+    position: relative;
+} */
